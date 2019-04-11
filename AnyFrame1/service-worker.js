@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "https://chengawix.github.io/frame-god/AnyFrame1/precache-manifest.98bfae408d8b6e898ef75e89276475a7.js"
+  "https://chengawix.github.io/frame-god/AnyFrame1/precache-manifest.934b3c2aabaf3e3db93c5ed2c0f56ee0.js"
 );
 
 workbox.clientsClaim();
