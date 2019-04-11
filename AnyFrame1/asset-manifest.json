@@ -1,14 +1,14 @@
 {
-  "main.css": "https://chengawix.github.io/frame-god//AnyFrame1/static/css/main.1346d839.chunk.css",
-  "main.js": "https://chengawix.github.io/frame-god//AnyFrame1/static/js/main.6b5574be.chunk.js",
-  "main.js.map": "https://chengawix.github.io/frame-god//AnyFrame1/static/js/main.6b5574be.chunk.js.map",
-  "runtime~main.js": "https://chengawix.github.io/frame-god//AnyFrame1/static/js/runtime~main.04abc6d9.js",
-  "runtime~main.js.map": "https://chengawix.github.io/frame-god//AnyFrame1/static/js/runtime~main.04abc6d9.js.map",
-  "static/js/2.6efc73d3.chunk.js": "https://chengawix.github.io/frame-god//AnyFrame1/static/js/2.6efc73d3.chunk.js",
-  "static/js/2.6efc73d3.chunk.js.map": "https://chengawix.github.io/frame-god//AnyFrame1/static/js/2.6efc73d3.chunk.js.map",
-  "index.html": "https://chengawix.github.io/frame-god//AnyFrame1/index.html",
-  "precache-manifest.77e4697c79c8b07693becc2ed2ca3405.js": "https://chengawix.github.io/frame-god//AnyFrame1/precache-manifest.77e4697c79c8b07693becc2ed2ca3405.js",
-  "service-worker.js": "https://chengawix.github.io/frame-god//AnyFrame1/service-worker.js",
-  "static/css/main.1346d839.chunk.css.map": "https://chengawix.github.io/frame-god//AnyFrame1/static/css/main.1346d839.chunk.css.map",
-  "static/media/logo.svg": "https://chengawix.github.io/frame-god//AnyFrame1/static/media/logo.5d5d9eef.svg"
+  "main.css": "https://chengawix.github.io/frame-god/AnyFrame1/static/css/main.1346d839.chunk.css",
+  "main.js": "https://chengawix.github.io/frame-god/AnyFrame1/static/js/main.5152bc79.chunk.js",
+  "main.js.map": "https://chengawix.github.io/frame-god/AnyFrame1/static/js/main.5152bc79.chunk.js.map",
+  "runtime~main.js": "https://chengawix.github.io/frame-god/AnyFrame1/static/js/runtime~main.08533b84.js",
+  "runtime~main.js.map": "https://chengawix.github.io/frame-god/AnyFrame1/static/js/runtime~main.08533b84.js.map",
+  "static/js/2.6efc73d3.chunk.js": "https://chengawix.github.io/frame-god/AnyFrame1/static/js/2.6efc73d3.chunk.js",
+  "static/js/2.6efc73d3.chunk.js.map": "https://chengawix.github.io/frame-god/AnyFrame1/static/js/2.6efc73d3.chunk.js.map",
+  "index.html": "https://chengawix.github.io/frame-god/AnyFrame1/index.html",
+  "precache-manifest.023fa6912eb3c3233f33a114f9894401.js": "https://chengawix.github.io/frame-god/AnyFrame1/precache-manifest.023fa6912eb3c3233f33a114f9894401.js",
+  "service-worker.js": "https://chengawix.github.io/frame-god/AnyFrame1/service-worker.js",
+  "static/css/main.1346d839.chunk.css.map": "https://chengawix.github.io/frame-god/AnyFrame1/static/css/main.1346d839.chunk.css.map",
+  "static/media/logo.svg": "https://chengawix.github.io/frame-god/AnyFrame1/static/media/logo.5d5d9eef.svg"
 }

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "https://chengawix.github.io/frame-god//AnyFrame1/precache-manifest.77e4697c79c8b07693becc2ed2ca3405.js"
+  "https://chengawix.github.io/frame-god/AnyFrame1/precache-manifest.023fa6912eb3c3233f33a114f9894401.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("https://chengawix.github.io/frame-god//AnyFrame1/index.html", {
+workbox.routing.registerNavigationRoute("https://chengawix.github.io/frame-god/AnyFrame1/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
