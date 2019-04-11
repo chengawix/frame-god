@@ -1,14 +1,14 @@
 {
-  "main.css": "/static/css/main.1346d839.chunk.css",
-  "main.js": "/static/js/main.6e08041f.chunk.js",
-  "main.js.map": "/static/js/main.6e08041f.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-  "static/js/2.6efc73d3.chunk.js": "/static/js/2.6efc73d3.chunk.js",
-  "static/js/2.6efc73d3.chunk.js.map": "/static/js/2.6efc73d3.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.f21ef4468bed7d1baf4e1a3dcc920b32.js": "/precache-manifest.f21ef4468bed7d1baf4e1a3dcc920b32.js",
-  "service-worker.js": "/service-worker.js",
-  "static/css/main.1346d839.chunk.css.map": "/static/css/main.1346d839.chunk.css.map",
-  "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
+  "main.css": "/frame-god/static/css/main.1346d839.chunk.css",
+  "main.js": "/frame-god/static/js/main.9a7f0942.chunk.js",
+  "main.js.map": "/frame-god/static/js/main.9a7f0942.chunk.js.map",
+  "runtime~main.js": "/frame-god/static/js/runtime~main.c5ad85e4.js",
+  "runtime~main.js.map": "/frame-god/static/js/runtime~main.c5ad85e4.js.map",
+  "static/js/2.6efc73d3.chunk.js": "/frame-god/static/js/2.6efc73d3.chunk.js",
+  "static/js/2.6efc73d3.chunk.js.map": "/frame-god/static/js/2.6efc73d3.chunk.js.map",
+  "index.html": "/frame-god/index.html",
+  "precache-manifest.d6a9b93d1aa3f26a84f26c2ecd91b13a.js": "/frame-god/precache-manifest.d6a9b93d1aa3f26a84f26c2ecd91b13a.js",
+  "service-worker.js": "/frame-god/service-worker.js",
+  "static/css/main.1346d839.chunk.css.map": "/frame-god/static/css/main.1346d839.chunk.css.map",
+  "static/media/logo.svg": "/frame-god/static/media/logo.5d5d9eef.svg"
 }
