@@ -1,0 +1,22 @@
+{
+  "name": "webpack-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "frame-god-webpack-plugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "datauri": "^1.1.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "uuid": "^3.3.2",
+    "websocket": "^1.0.28"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
