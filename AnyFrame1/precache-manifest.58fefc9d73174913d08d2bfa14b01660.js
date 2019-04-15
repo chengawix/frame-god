@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "https://chengawix.github.io/frame-god/AnyFrame1/static/js/runtime~main.08533b84.js"
   },
   {
-    "revision": "5e31a498844977fcfadf",
-    "url": "https://chengawix.github.io/frame-god/AnyFrame1/static/js/main.71641d1b.chunk.js"
+    "revision": "1b4a441d61b32f95130a",
+    "url": "https://chengawix.github.io/frame-god/AnyFrame1/static/js/main.f3bbf834.chunk.js"
   },
   {
     "revision": "5123afb2af379a118e63",
     "url": "https://chengawix.github.io/frame-god/AnyFrame1/static/js/2.7b5ee4f3.chunk.js"
   },
   {
-    "revision": "5e31a498844977fcfadf",
+    "revision": "1b4a441d61b32f95130a",
     "url": "https://chengawix.github.io/frame-god/AnyFrame1/static/css/main.1346d839.chunk.css"
   },
   {
-    "revision": "a47c26d1dcfaafc3f9a793645b947686",
+    "revision": "4383ef50d3dc3d01ba5f8a94d11dacbf",
     "url": "https://chengawix.github.io/frame-god/AnyFrame1/index.html"
   }
 ];
