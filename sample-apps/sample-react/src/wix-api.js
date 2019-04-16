@@ -39,5 +39,6 @@ module.exports = {
                 args: [collection, id]
             })
         }
+        // ,query(collection, )
     }
 }

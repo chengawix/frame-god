@@ -152,7 +152,7 @@ $w.onReady(function() {
         JSON.stringify({
           type: "publish",
           homepage: gitHubHomePage,
-          "#childFrame": appName
+          frameName: appName
         })
       );
     });

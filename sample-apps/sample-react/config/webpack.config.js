@@ -23,7 +23,7 @@ const getClientEnvironment = require('./env');
 const ModuleNotFoundPlugin = require('react-dev-utils/ModuleNotFoundPlugin');
 const ForkTsCheckerWebpackPlugin = require('react-dev-utils/ForkTsCheckerWebpackPlugin');
 const typescriptFormatter = require('react-dev-utils/typescriptFormatter');
-const FrameGodWebpackPlugin = require("../../../webpack-plugin/frame-god-webpack-plugin")
+const WixAnyFramePlugin\ = require("../../../webpack-plugin/frame-god-webpack-plugin")
 
 // Source maps are resource heavy and can cause out of memory issue for large source files.
 const shouldUseSourceMap = process.env.GENERATE_SOURCEMAP !== 'false';
@@ -587,16 +587,25 @@ module.exports = function(webpackEnv) {
           // The formatter is invoked directly in WebpackDevServerUtils during development
           formatter: isEnvProduction ? typescriptFormatter : undefined,
         }),
-        new FrameGodWebpackPlugin({ 
-          buildWith: {
-            workingDir: process.cwd(),
-            script: "scripts/build.js"
-          },
-          buildPath: paths.appBuild,
-          isDev: isEnvDevelopment,
-          webpackPort: 3000,
-          devPipePort: 9000
+        
+        /**
+         * WixAnyFramePlugin config:
+         */
+        
+        new WixAnyFramePlugin({ 
+          buildWith: { //where and how to build the app
+            workingDir: process.cwd(), //
+            script: "scripts/build.js" // this works with standard "create-react-app" project
+          }, 
+          buildPath: paths.appBuild, // where does build go to
+          isDev: isEnvDevelopment, //are you currently in dev or in prod? 
+            //prod == build
+            //dev == start devpipe WixAnyFramePlugin server, and respond to webpack events
+          webpackPort: 3000, //the port this project is running local
+          devPipePort: 9000 //WixAnyFramePlugin dev pipe server port
          }),
+
+
     ].filter(Boolean),
     // Some libraries import Node modules but don't use them in the browser.
     // Tell Webpack to provide empty mocks for them so importing them works.
