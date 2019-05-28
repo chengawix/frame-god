@@ -2,13 +2,22 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { wixData } from "./wix-api";
+import ReactStickies from 'react-stickies';
 
 class App extends Component {
   constructor () {
     super()
     this.state = {
-      data: "This is React In Wix QQ"
+      data: "This is React In Wix QQ",
+      notes:[]
     }
+    this.onChange = this.onChange.bind(this)
+    // this.onSave = this.onSave.bind(this)
+  }
+  onChange (notes) {
+    this.setState({ // Update the notes state
+      notes
+    })
   }
   render() {
     return (
@@ -27,14 +36,10 @@ class App extends Component {
           >
             Load Data
           </button>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <ReactStickies
+              notes={this.state.notes}
+              onChange={this.onChange}
+      />
         </header>
       </div>
     );

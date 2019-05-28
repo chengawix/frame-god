@@ -3,9 +3,22 @@ const allowedOirigns = [];
 const maxAttemtps = 100;
 import wixData from "wix-data";
 
+var runTimeDataStore = {};
+
 const wixDataApi = {
   wixDataGet: function([collection, id]) {
     return wixData.get(collection, id);
+  },
+  getItem:function([key]) {
+    return new Promise((resolve, reject)=>{
+      resolve(runTimeDataStore[key])
+    })
+  },
+  setItem: function([key,value]) {
+    runTimeDataStore[key] = value;
+    return new Promise((resolve, reject)=>{
+      resolve(runTimeDataStore[key])
+    })
   }
 };
 
@@ -16,14 +29,14 @@ const noSuchApiPromise = function() {
 };
 
 function processWixApiCall(eventData) {
-  console.log("new wix api request");
+  // console.log("new wix api request");
   let { data, requestId } = eventData;
   let apiPromise = wixDataApi[data.api]
     ? wixDataApi[data.api](data.args)
     : noSuchApiPromise();
   apiPromise
     .then(results => {
-      console.log("done: exec once");
+      // console.log("done: exec once");
       postMessage({
         type: "wix-api",
         requestId: requestId,
@@ -31,7 +44,7 @@ function processWixApiCall(eventData) {
       });
     })
     .catch(error => {
-      console.log("error: exec once");
+      // console.log("error: exec once!", error);
       postMessage({
         type: "wix-api",
         requestId: requestId,
@@ -77,7 +90,7 @@ function setupFrame() {
 let isWixApiBinded = false
 const bindApi = function (){
   if (isWixApiBinded) {
-    console.log("i only bind once");
+    // console.log("I only bind wixApi once");
     return
   }
   isWixApiBinded = true;
@@ -94,7 +107,7 @@ const bindApi = function (){
 
 export function registerFrame() {
   if (frameRegistry["#childFrame"]) return;
-  console.log(`#childFrame waiting ready message`);
+  // console.log(`#Frame waiting ready message`);
   frameRegistry["#childFrame"] = {
     setupAttempts: 0,
     ready: false,
@@ -159,12 +172,38 @@ $w.onReady(function() {
   } else {
     $w("#childFrame").src = `${gitHubHomePage}/${appName}/`;
   }
-  // $w("#childFrame").onMessage((event)=>{
-  //   console.log(event);
-  // })
 });
 
 $widget.onPropsChanged((oldProps, newProps) => {
   // If your widget has properties, onPropsChanged is where you should handle changes to their values.
   // Property values can change at runtime by code written on the site, or when you preview your widget here in the App Builder.
 });
+
+
+/**
+*@function
+*@description Get a value that was set by your guest app using wix-api/storage/setItem(key,value)
+*@param {string} key - key
+*@returns {Any} value by key
+*/
+export function getItem(key){
+  return runTimeDataStore[key]
+	//This function is part of my public API
+}
+
+/**
+*@function
+*@description Set a value, and then access it from your guest app using wix-api/storage/getItem(key)
+*@param {string} key
+*@param {Any} newValue
+*@returns {Any} new value
+*/
+export function setItem(key, newValue){
+  runTimeDataStore[key] = newValue;
+  postMessage({
+    "type": "wix-api",
+    "api": "setItem",
+    data: {key:key,value:newValue}
+  });
+  return runTimeDataStore[key]
+}

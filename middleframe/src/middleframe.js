@@ -24,7 +24,7 @@ window.addEventListener("message", event => {
           reloadOffspringFrameCode(data.data);
           break;
         case "wix-api":
-            console.log(
+            console.debug(
                 `middleFrame: Got message froms parent sending to frame ${JSON.stringify(
                 data
                 )}`
@@ -35,7 +35,7 @@ window.addEventListener("message", event => {
           break;
       }
     } else {
-      console.log(
+      console.debug(
         `middleFrame: Got message from frame, sending to parent ${JSON.stringify(
           data
         )}`)
